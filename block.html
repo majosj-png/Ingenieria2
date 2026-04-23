@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Etiquetas block</title>
+</head>
+<body class="p-4">
+    <header class="mb-4">
+        <h1>Demostración de etiquetas block</h1>
+        <p class="lead">Ejemplos de elementos block-level: secciones, artículos, tablas, listas, etc.</p>
+        <nav>
+            <a href="index.html" class="btn btn-outline-secondary btn-sm">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mb-4">
+            <h2>Sección y artículos</h2>
+            <article class="border p-3 mb-2">
+                <h3>Artículo de ejemplo</h3>
+                <p>Un <strong>article</strong> representa contenido independiente y autocontenido que podría distribuirse de forma separada.</p>
+            </article>
+            <aside class="bg-light p-2">Aside: información relacionada o complementaria.</aside>
+        </section>
+
+        <section class="mb-4">
+            <h2>Párrafos y directivas de agrupación</h2>
+            <p>Los elementos <code>p</code> ocupan su propio bloque. Pueden contener texto y elementos inline.</p>
+            <p>También existe <code>div</code> para agrupar contenido y <code>header</code>/<code>footer</code> para cabeceras y pies.</p>
+        </section>
+
+        <section class="mb-4">
+            <h2>Listas</h2>
+            <h4>Lista desordenada</h4>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <h4>Lista ordenada</h4>
+            <ol>
+                <li>Primer paso</li>
+                <li>Segundo paso</li>
+            </ol>
+            <h4>Lista de definiciones</h4>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para páginas web.</dd>
+                <dt>CSS</dt>
+                <dd>Hojas de estilo en cascada.</dd>
+            </dl>
+        </section>
+
+        <section class="mb-4">
+            <h2>Tablas</h2>
+            <figure>
+                <figcaption>Tabla de ejemplo con encabezados y cuerpo</figcaption>
+                <table class="table table-striped">
+                    <caption>Horas de trabajo</caption>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Día</th>
+                            <th>Horas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ana</td>
+                            <td>Lunes</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Martes</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+        </section>
+
+        <section class="mb-4">
+            <h2>Bloques de cita y preformateado</h2>
+            <blockquote class="blockquote p-3 border-start">
+                <p>"La simplicidad es la máxima sofisticación."</p>
+                <footer class="blockquote-footer">Autor desconocido</footer>
+            </blockquote>
+            <pre class="bg-light p-3">
+function saludo() {
+    console.log('Hola mundo');
+}
+            </pre>
+        </section>
+
+        <section class="mb-4">
+            <h2>Direcciones y separadores</h2>
+            <address>
+                Contacto: Majo &lt;majo@example.com&gt;<br>
+                Ciudad: Buenos Aires
+            </address>
+            <hr>
+        </section>
+    </main>
+
+    <footer class="mt-4">
+        <p>Ejemplos de elementos block — <a href="index.html">Volver al inicio</a></p>
+    </footer>
+</body>
+</html>

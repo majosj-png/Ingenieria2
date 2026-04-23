@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Formularios y controles</title>
+</head>
+<body class="p-4">
+    <header class="mb-3">
+        <h1>Elementos de formulario</h1>
+        <p class="small">Ejemplos de controles: inputs, select, textarea, botones y tipos avanzados.</p>
+        <a href="index.html" class="btn btn-outline-secondary btn-sm">Volver al inicio</a>
+    </header>
+
+    <main>
+        <form action="#" method="post" class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@dominio.com" required>
+            </div>
+
+            <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+
+            <div class="col-md-4">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" id="edad" name="edad" class="form-control" min="0" max="120">
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label d-block">Género</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="g1" value="f">
+                    <label class="form-check-label" for="g1">F</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="genero" id="g2" value="m">
+                    <label class="form-check-label" for="g2">M</label>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label d-block">Intereses</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="i1" name="interes" value="web">
+                    <label class="form-check-label" for="i1">Desarrollo web</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="i2" name="interes" value="diseño">
+                    <label class="form-check-label" for="i2">Diseño</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="pais" class="form-label">País</label>
+                <select id="pais" name="pais" class="form-select">
+                    <option value="" selected>Selecciona...</option>
+                    <option value="ar">Argentina</option>
+                    <option value="es">España</option>
+                    <option value="mx">México</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="archivo" class="form-label">Adjuntar archivo</label>
+                <input type="file" id="archivo" name="archivo" class="form-control">
+            </div>
+
+            <div class="col-12">
+                <fieldset class="border p-3">
+                    <legend class="float-none w-auto px-2">Preferencias</legend>
+                    <label for="color" class="form-label">Color favorito</label>
+                    <input list="colores" id="color" name="color" class="form-control" placeholder="Escribe o elige">
+                    <datalist id="colores">
+                        <option value="Rojo">
+                        <option value="Azul">
+                        <option value="Verde">
+                    </datalist>
+                </fieldset>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+
+            <div class="col-12 mt-3">
+                <label class="form-label">Progreso de carga (ejemplo)</label>
+                <progress value="32" max="100"></progress>
+                <meter value="0.7">70%</meter>
+            </div>
+
+        </form>
+
+        <hr class="my-4">
+        <p>Controles adicionales: <code>output</code>, <code>progress</code>, <code>meter</code>, y validaciones del lado cliente.</p>
+    </main>
+
+    <footer class="mt-4">
+        <a href="index.html" class="btn btn-outline-secondary">Volver al inicio</a>
+    </footer>
+</body>
+</html>
