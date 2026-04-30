@@ -29,6 +29,9 @@ Integration notes
 
 If you want, Copilot sessions can be configured to run browser-based end-to-end tests. Would you like an MCP server configured for Playwright or similar?
 
+##MANDATORY INSTRUCTIONS
+-Hablame en español,por favor. No quiero que me hables en ingles
+
 ## Recomendaciones
 - Cada vez que ingreses un nuevo código, inserta un comentario en español que explique las etiquetas utilizadas
 - los ejemplos y el contenido en general necesito que esten en español
