@@ -5,3 +5,78 @@ div {
     padding: 15px; /* Espacio interno */
     margin-bottom: 20px; /* Espacio entre formularios */
 }
+/*selector por etiquetas*/
+label {
+    font-style: italic;
+    color:white;
+    background-color: black;
+}
+/*selector por clase*/
+fieldset{
+    background-color: aqua;
+}
+
+/*selector universal*/
+*{
+    color:#7297bc;
+}
+
+/*selector descendiente*/
+div p {
+  color:purple;
+}
+/*selector por hijo directo*/
+section > p {
+  color:orange;
+}
+
+/*selector por grupo*/
+h1, h2, h3 {
+  color:navy;
+  font-family:Arial,sans-serif;
+}
+
+/*selector combinado*/
+p.importante {
+  color:red;
+}
+
+*/selector por atributo*/
+td[rowspan],
+th[rowspan]{
+    background-color: aqua;
+}
+
+
+/*selector de clase*/
+.titulo {
+    color:#7297bc;
+    font-size:24px;
+    font-weight:bolder;
+    margin-bottom: 10px;
+
+}
+
+*/selector de id*/
+#email {
+    color:#7297bc;
+    font-size: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+
+}
+
+*/selector por pseudoclase*/
+input:hover {
+    background-color: #7297bc;
+}
+input:focus{
+    border-color: cadetblue;
+    box-shadow: 0 0 5px rgba(40, 119, 198, 0.5 );
+}
+
+*/selector por pseudoelemento*/
+p::first-letter {
+  font-size:32px;
+  color:red;
+}
