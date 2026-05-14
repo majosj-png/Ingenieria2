@@ -1,0 +1,7 @@
+/*formateo los divs con fondo gris claro, bordes redondeados y un poco de espacio interno para mejorar la apariencia de los formularios. */
+div {
+    background-color: #7297bc; /* Fondo gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio entre formularios */
+}
