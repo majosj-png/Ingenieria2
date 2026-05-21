@@ -42,10 +42,10 @@ p.importante {
   color:red;
 }
 
-*/selector por atributo*/
+/* selector por atributo */
 td[rowspan],
 th[rowspan]{
-    background-color: aqua;
+    background-color: aqua !important;
 }
 
 
@@ -78,6 +78,13 @@ input:focus{
 
 /*selector por pseudoelemento*/
 p::first-letter {
-  font-size:32px;
-  color:red;
+    font-size:32px;
+    color:red;
+}
+
+h5{
+    /* background:linear-gradient(to right, #bc72ac, #0f5fe0); */
+    background-image: url("../img/imgfondo.jpg"); 
+    padding: 30px 10px 50px 60px;
+    border: 2px solid black;
 }
