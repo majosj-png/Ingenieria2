@@ -82,7 +82,7 @@ p::first-letter {
     color:red;
 }
 
-h5{
+body{
     /* background:linear-gradient(to right, #bc72ac, #0f5fe0); */
     background-image: url("../img/imgfondo.jpg"); 
     padding: 30px 10px 50px 60px;

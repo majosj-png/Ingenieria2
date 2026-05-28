@@ -7,14 +7,27 @@
     <link rel="stylesheet" href="css/styles.css"
     <title>Formularios y controles</title>
 
-    <style>
-        
-    </style>
-    
+  <script>
+    function mostrarMensaje() {
+        alert("Probamos un poco de JavaScript");
+    }
+    function pedimosNombreYSaludar(){
+        var nombre = prompt("¿Ingrese su nombre por favor?");
+        alert("Hola " +nombre);
+    }
+    function cambiarTitulo(){
+        let texto_titulo=prompt("Ingrese el nuevo título ");
+        const titulo=document.querySelector("h1");
+        titulo.textContent=texto_titulo;
+        titulo.classList.add("alert-success");
+    }
+  </script>
+
+
 </head>
 <body class="p-4">
     <header class="mb-3">
-        <h1>Elementos de formulario</h1>
+        <h1 class="alert " ondblclick="cambiarTitulo();">Elementos de formulario</h1>
         <p class="small">Ejemplos de controles: inputs, select, textarea, botones y tipos avanzados.</p>
         <a href="index.html" class="btn btn-outline-secondary btn-sm">Volver al inicio</a>
     </header>
@@ -38,7 +51,8 @@
 
             <div class="col-md-4">
                 <label for="edad" class="form-label">Edad</label>
-                <input type="number" id="edad" name="edad" class="form-control" min="0" max="120">
+                <input type="number" id="edad" name="edad" class="form-control" min="0" max="120" onmouseover="mostrarMensaje();">
+
             </div>
 
             <div class="col-md-4">
@@ -67,7 +81,7 @@
 
             <div class="col-md-6">
                 <label for="pais" class="form-label">País</label>
-                <select id="pais" name="pais" class="form-select">
+                <select id="pais" name="pais" class="form-select" onchange="pedimosNombreYSaludar();">
                     <option value="" selected>Selecciona...</option>
                     <option value="ar">Argentina</option>
                     <option value="es">España</option>
