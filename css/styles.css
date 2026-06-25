@@ -88,3 +88,7 @@ body{
     padding: 30px 10px 50px 60px;
     border: 2px solid black;
 }
+
+body {
+  font-family: sans-serif;
+}
